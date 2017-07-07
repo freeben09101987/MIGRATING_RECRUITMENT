@@ -53,6 +53,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CodeFirst\ADDITIONAL_INFO.cs" />
+    <Compile Include="CodeFirst\CodeFirstModel.cs" />
+    <Compile Include="CodeFirst\EMP_DETAIL.cs" />
+    <Compile Include="CodeFirst\META.cs" />
+    <Compile Include="CodeFirst\MS_PHD.cs" />
+    <Compile Include="CodeFirst\PAY_DETAIL.cs" />
+    <Compile Include="CodeFirst\PERSONAL_INFO.cs" />
+    <Compile Include="CodeFirst\PROJECT_INFO.cs" />
+    <Compile Include="CodeFirst\RECRUIT_TYPE.cs" />
     <Compile Include="NEW_DB\ADDITIONAL_INFO.cs">
       <DependentUpon>NEWMODEL.tt</DependentUpon>
     </Compile>
