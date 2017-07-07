@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="RecruitModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="NEWADH">
+    <Key>
+      <PropertyRef Name="FILENO" />
+    </Key>
+    <Property Name="EMPCODE" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="STAT" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="TITLE" Type="String" MaxLength="120" FixedLength="false" Unicode="true" />
+    <Property Name="PROJECTNO" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Name="PTYPE" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="NAME" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="DEPT" Type="String" MaxLength="7" FixedLength="false" Unicode="true" />
+    <Property Name="SPON" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="DESIG" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="DTAP" Type="DateTime" Precision="0" />
+    <Property Name="EXTN" Type="DateTime" Precision="0" />
+    <Property Name="DRLF" Type="DateTime" Precision="0" />
+    <Property Name="BASIC" Type="Double" />
+    <Property Name="INCR" Type="Double" />
+    <Property Name="DINC" Type="DateTime" Precision="0" />
+    <Property Name="LDINC" Type="DateTime" Precision="0" />
+    <Property Name="COOR" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="REM" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="SCSTOS" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="FILENO" Type="String" MaxLength="6" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="OLD_FILENO" Type="String" MaxLength="6" FixedLength="false" Unicode="true" />
+    <Property Name="DESIGN" Type="String" MaxLength="35" FixedLength="false" Unicode="true" />
+    <Property Name="COO" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Name="PFLAG" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="HRA" Type="Double" />
+    <Property Name="DT_INP" Type="DateTime" Precision="0" />
+    <Property Name="DT_CHG" Type="DateTime" Precision="0" />
+    <Property Name="PCODE" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="DOB" Type="DateTime" Precision="0" />
+    <Property Name="DEPARTMENT" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FATHER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ADDRESS1" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="ADDRESS2" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="ADDRESS3" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="ADDRESS4" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="CITY" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="MONTH" Type="Double" />
+    <Property Name="RATE" Type="Double" />
+    <Property Name="SEX" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="BLDGRP" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="RH" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="PHONE" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="R_ADDR1" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="R_ADDR2" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="R_CITY" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="R_PIN" Type="String" MaxLength="7" FixedLength="false" Unicode="true" />
+    <Property Name="R_PHONE" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="R_ADDR3" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="R_ADDR4" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="COURSE" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="SEMESTER" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="YR" Type="String" MaxLength="4" FixedLength="true" Unicode="false" />
+    <Property Name="PROVISIONAL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MEDICAL" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="extn_date" Type="DateTime" Precision="3" />
+    <Property Name="paybill_id" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="paybill_no" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="email_id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Pensioner" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="Qualification" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="RecruitEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="NEWADH" EntityType="Self.NEWADH" />
+    <EntitySet Name="NEWREG" EntityType="RecruitModel.NEWREG" />
+  </EntityContainer>
+  <EntityType Name="NEWREG">
+    <Key>
+      <PropertyRef Name="FILENO" />
+    </Key>
+    <Property Name="EMPCODE" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="STAT" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="TITLE" Type="String" MaxLength="120" FixedLength="false" Unicode="true" />
+    <Property Name="PROJECTNO" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Name="PTYPE" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="NAME" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="DEPT" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="SPON" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="DESIG" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="DTAP" Type="DateTime" Precision="0" />
+    <Property Name="EXTN" Type="DateTime" Precision="0" />
+    <Property Name="DRLF" Type="DateTime" Precision="0" />
+    <Property Name="BASIC" Type="Double" />
+    <Property Name="INCR" Type="Double" />
+    <Property Name="DINC" Type="DateTime" Precision="0" />
+    <Property Name="LDINC" Type="DateTime" Precision="0" />
+    <Property Name="COOR" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="REM" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="SCSTOS" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="FILENO" Type="String" Nullable="false" MaxLength="6" FixedLength="false" Unicode="true" />
+    <Property Name="OLD_FILENO" Type="String" MaxLength="6" FixedLength="false" Unicode="true" />
+    <Property Name="DESIGN" Type="String" MaxLength="35" FixedLength="false" Unicode="true" />
+    <Property Name="COO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PFLAG" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="HRA" Type="Double" />
+    <Property Name="DT_INP" Type="DateTime" Precision="0" />
+    <Property Name="DT_CHG" Type="DateTime" Precision="0" />
+    <Property Name="PCODE" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="DOB" Type="DateTime" Precision="0" />
+    <Property Name="DEPARTMENT" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="FATHER" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="ADDRESS1" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="ADDRESS2" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="ADDRESS3" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="ADDRESS4" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="CITY" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="MONTH" Type="Double" />
+    <Property Name="RATE" Type="Double" />
+    <Property Name="SEX" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="BLDGRP" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="RH" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="PHONE" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="R_ADDR1" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="R_ADDR2" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="R_CITY" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="R_PIN" Type="String" MaxLength="7" FixedLength="false" Unicode="true" />
+    <Property Name="R_PHONE" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="R_ADDR3" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="R_ADDR4" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="COURSE" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="SEMESTER" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="YR" Type="String" MaxLength="4" FixedLength="true" Unicode="false" />
+    <Property Name="PROVISIONAL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MEDICAL" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="extn_date" Type="DateTime" Precision="3" />
+    <Property Name="paybill_id" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="paybill_no" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="email_id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Pensioner" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="Qualification" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>

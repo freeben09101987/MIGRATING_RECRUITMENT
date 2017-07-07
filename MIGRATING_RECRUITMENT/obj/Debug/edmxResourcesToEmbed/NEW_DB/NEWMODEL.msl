@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="RECRUITMENTModelStoreContainer" CdmEntityContainer="RECRUITMENTEntities">
+    <EntitySetMapping Name="ADDITIONAL_INFO">
+      <EntityTypeMapping TypeName="RECRUITMENTModel.ADDITIONAL_INFO">
+        <MappingFragment StoreEntitySet="ADDITIONAL_INFO">
+          <ScalarProperty Name="FILENO" ColumnName="FILENO" />
+          <ScalarProperty Name="DINC" ColumnName="DINC" />
+          <ScalarProperty Name="LDINC" ColumnName="LDINC" />
+          <ScalarProperty Name="REM" ColumnName="REM" />
+          <ScalarProperty Name="PFLAG" ColumnName="PFLAG" />
+          <ScalarProperty Name="PCODE" ColumnName="PCODE" />
+          <ScalarProperty Name="MONTH" ColumnName="MONTH" />
+          <ScalarProperty Name="RATE" ColumnName="RATE" />
+          <ScalarProperty Name="PROVISIONAL" ColumnName="PROVISIONAL" />
+          <ScalarProperty Name="MEDICAL" ColumnName="MEDICAL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="META">
+      <EntityTypeMapping TypeName="RECRUITMENTModel.META">
+        <MappingFragment StoreEntitySet="META">
+          <ScalarProperty Name="FILENO" ColumnName="FILENO" />
+          <ScalarProperty Name="DT_INP" ColumnName="DT_INP" />
+          <ScalarProperty Name="DT_CHG" ColumnName="DT_CHG" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MS_PHD">
+      <EntityTypeMapping TypeName="RECRUITMENTModel.MS_PHD">
+        <MappingFragment StoreEntitySet="MS_PHD">
+          <ScalarProperty Name="FILENO" ColumnName="FILENO" />
+          <ScalarProperty Name="COURSE" ColumnName="COURSE" />
+          <ScalarProperty Name="SEMESTER" ColumnName="SEMESTER" />
+          <ScalarProperty Name="YR" ColumnName="YR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PROJECT_INFO">
+      <EntityTypeMapping TypeName="RECRUITMENTModel.PROJECT_INFO">
+        <MappingFragment StoreEntitySet="PROJECT_INFO">
+          <ScalarProperty Name="FILENO" ColumnName="FILENO" />
+          <ScalarProperty Name="TITLE" ColumnName="TITLE" />
+          <ScalarProperty Name="PROJECTNO" ColumnName="PROJECTNO" />
+          <ScalarProperty Name="PTYPE" ColumnName="PTYPE" />
+          <ScalarProperty Name="SPON" ColumnName="SPON" />
+          <ScalarProperty Name="COOR" ColumnName="COOR" />
+          <ScalarProperty Name="COO" ColumnName="COO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PAY_DETAIL">
+      <EntityTypeMapping TypeName="RECRUITMENTModel.PAY_DETAIL">
+        <MappingFragment StoreEntitySet="PAY_DETAIL">
+          <ScalarProperty Name="PAYBILL_NO" ColumnName="PAYBILL_NO" />
+          <ScalarProperty Name="PAYBILL_ID" ColumnName="PAYBILL_ID" />
+          <ScalarProperty Name="HRA" ColumnName="HRA" />
+          <ScalarProperty Name="INCR" ColumnName="INCR" />
+          <ScalarProperty Name="BAISC" ColumnName="BAISC" />
+          <ScalarProperty Name="FILENO" ColumnName="FILENO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PERSONAL_INFO">
+      <EntityTypeMapping TypeName="RECRUITMENTModel.PERSONAL_INFO">
+        <MappingFragment StoreEntitySet="PERSONAL_INFO">
+          <ScalarProperty Name="QUALIFICATION" ColumnName="QUALIFICATION" />
+          <ScalarProperty Name="PENSIONER" ColumnName="PENSIONER" />
+          <ScalarProperty Name="EMAIL_ID" ColumnName="EMAIL_ID" />
+          <ScalarProperty Name="R_ADDR4" ColumnName="R_ADDR4" />
+          <ScalarProperty Name="R_ADDR3" ColumnName="R_ADDR3" />
+          <ScalarProperty Name="R_PHONE" ColumnName="R_PHONE" />
+          <ScalarProperty Name="R_PIN" ColumnName="R_PIN" />
+          <ScalarProperty Name="R_CITY" ColumnName="R_CITY" />
+          <ScalarProperty Name="R_ADDR2" ColumnName="R_ADDR2" />
+          <ScalarProperty Name="R_ADDR1" ColumnName="R_ADDR1" />
+          <ScalarProperty Name="PHONE" ColumnName="PHONE" />
+          <ScalarProperty Name="RH" ColumnName="RH" />
+          <ScalarProperty Name="BLDGRP" ColumnName="BLDGRP" />
+          <ScalarProperty Name="SEX" ColumnName="SEX" />
+          <ScalarProperty Name="CITY" ColumnName="CITY" />
+          <ScalarProperty Name="ADDRESS4" ColumnName="ADDRESS4" />
+          <ScalarProperty Name="ADDRESS3" ColumnName="ADDRESS3" />
+          <ScalarProperty Name="ADDRESS2" ColumnName="ADDRESS2" />
+          <ScalarProperty Name="ADDRESS1" ColumnName="ADDRESS1" />
+          <ScalarProperty Name="FATHER" ColumnName="FATHER" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="SCSTOS" ColumnName="SCSTOS" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="FILENO" ColumnName="FILENO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EMP_DETAIL">
+      <EntityTypeMapping TypeName="RECRUITMENTModel.EMP_DETAIL">
+        <MappingFragment StoreEntitySet="EMP_DETAIL">
+          <ScalarProperty Name="EXTN_DATE" ColumnName="EXTN_DATE" />
+          <ScalarProperty Name="DEPARTMENT" ColumnName="DEPARTMENT" />
+          <ScalarProperty Name="DESIGN" ColumnName="DESIGN" />
+          <ScalarProperty Name="OLD_FILENO" ColumnName="OLD_FILENO" />
+          <ScalarProperty Name="DRLF" ColumnName="DRLF" />
+          <ScalarProperty Name="EXTN" ColumnName="EXTN" />
+          <ScalarProperty Name="DTAP" ColumnName="DTAP" />
+          <ScalarProperty Name="DESIG" ColumnName="DESIG" />
+          <ScalarProperty Name="DEPT" ColumnName="DEPT" />
+          <ScalarProperty Name="STAT" ColumnName="STAT" />
+          <ScalarProperty Name="FILENO" ColumnName="FILENO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RECRUIT_TYPE">
+      <EntityTypeMapping TypeName="RECRUITMENTModel.RECRUIT_TYPE">
+        <MappingFragment StoreEntitySet="RECRUIT_TYPE">
+          <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+          <ScalarProperty Name="FILENO" ColumnName="FILENO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

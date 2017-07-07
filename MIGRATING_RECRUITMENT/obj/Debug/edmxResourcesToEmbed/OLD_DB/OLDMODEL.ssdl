@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="RecruitModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="NEWADH">
+    <Key>
+      <PropertyRef Name="FILENO" />
+    </Key>
+    <Property Name="EMPCODE" Type="nvarchar" MaxLength="5" />
+    <Property Name="STAT" Type="nvarchar" MaxLength="1" />
+    <Property Name="TITLE" Type="nvarchar" MaxLength="120" />
+    <Property Name="PROJECTNO" Type="nvarchar" MaxLength="25" />
+    <Property Name="PTYPE" Type="nvarchar" MaxLength="3" />
+    <Property Name="NAME" Type="nvarchar" MaxLength="150" />
+    <Property Name="DEPT" Type="nvarchar" MaxLength="7" />
+    <Property Name="SPON" Type="nvarchar" MaxLength="4" />
+    <Property Name="DESIG" Type="nvarchar" MaxLength="3" />
+    <Property Name="DTAP" Type="smalldatetime" />
+    <Property Name="EXTN" Type="smalldatetime" />
+    <Property Name="DRLF" Type="smalldatetime" />
+    <Property Name="BASIC" Type="float" />
+    <Property Name="INCR" Type="float" />
+    <Property Name="DINC" Type="smalldatetime" />
+    <Property Name="LDINC" Type="smalldatetime" />
+    <Property Name="COOR" Type="nvarchar" MaxLength="4" />
+    <Property Name="REM" Type="nvarchar" MaxLength="20" />
+    <Property Name="SCSTOS" Type="nvarchar" MaxLength="2" />
+    <Property Name="FILENO" Type="nvarchar" MaxLength="6" Nullable="false" />
+    <Property Name="OLD_FILENO" Type="nvarchar" MaxLength="6" />
+    <Property Name="DESIGN" Type="nvarchar" MaxLength="35" />
+    <Property Name="COO" Type="nvarchar" MaxLength="60" />
+    <Property Name="PFLAG" Type="nvarchar" MaxLength="1" />
+    <Property Name="HRA" Type="float" />
+    <Property Name="DT_INP" Type="smalldatetime" />
+    <Property Name="DT_CHG" Type="smalldatetime" />
+    <Property Name="PCODE" Type="nvarchar" MaxLength="30" />
+    <Property Name="DOB" Type="smalldatetime" />
+    <Property Name="DEPARTMENT" Type="nvarchar" MaxLength="50" />
+    <Property Name="FATHER" Type="nvarchar" MaxLength="50" />
+    <Property Name="ADDRESS1" Type="nvarchar" MaxLength="30" />
+    <Property Name="ADDRESS2" Type="nvarchar" MaxLength="30" />
+    <Property Name="ADDRESS3" Type="nvarchar" MaxLength="30" />
+    <Property Name="ADDRESS4" Type="nvarchar" MaxLength="30" />
+    <Property Name="CITY" Type="nvarchar" MaxLength="20" />
+    <Property Name="MONTH" Type="float" />
+    <Property Name="RATE" Type="float" />
+    <Property Name="SEX" Type="nvarchar" MaxLength="1" />
+    <Property Name="BLDGRP" Type="nvarchar" MaxLength="3" />
+    <Property Name="RH" Type="nvarchar" MaxLength="3" />
+    <Property Name="PHONE" Type="nvarchar" MaxLength="12" />
+    <Property Name="R_ADDR1" Type="nvarchar" MaxLength="30" />
+    <Property Name="R_ADDR2" Type="nvarchar" MaxLength="30" />
+    <Property Name="R_CITY" Type="nvarchar" MaxLength="20" />
+    <Property Name="R_PIN" Type="nvarchar" MaxLength="7" />
+    <Property Name="R_PHONE" Type="nvarchar" MaxLength="12" />
+    <Property Name="R_ADDR3" Type="nvarchar" MaxLength="30" />
+    <Property Name="R_ADDR4" Type="nvarchar" MaxLength="30" />
+    <Property Name="COURSE" Type="nvarchar" MaxLength="10" />
+    <Property Name="SEMESTER" Type="nvarchar" MaxLength="20" />
+    <Property Name="YR" Type="char" MaxLength="4" />
+    <Property Name="PROVISIONAL" Type="nvarchar" MaxLength="50" />
+    <Property Name="MEDICAL" Type="nvarchar" MaxLength="10" />
+    <Property Name="extn_date" Type="datetime" />
+    <Property Name="paybill_id" Type="nvarchar" MaxLength="4" />
+    <Property Name="paybill_no" Type="nvarchar" MaxLength="5" />
+    <Property Name="email_id" Type="nvarchar" MaxLength="50" />
+    <Property Name="Pensioner" Type="varchar" MaxLength="3" />
+    <Property Name="Qualification" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="NEWREG">
+    <Key>
+      <PropertyRef Name="FILENO" />
+    </Key>
+    <Property Name="EMPCODE" Type="nvarchar" MaxLength="5" />
+    <Property Name="STAT" Type="nvarchar" MaxLength="1" />
+    <Property Name="TITLE" Type="nvarchar" MaxLength="120" />
+    <Property Name="PROJECTNO" Type="nvarchar" MaxLength="25" />
+    <Property Name="PTYPE" Type="nvarchar" MaxLength="3" />
+    <Property Name="NAME" Type="nvarchar" MaxLength="100" />
+    <Property Name="DEPT" Type="nvarchar" MaxLength="30" />
+    <Property Name="SPON" Type="nvarchar" MaxLength="4" />
+    <Property Name="DESIG" Type="nvarchar" MaxLength="3" />
+    <Property Name="DTAP" Type="smalldatetime" />
+    <Property Name="EXTN" Type="smalldatetime" />
+    <Property Name="DRLF" Type="smalldatetime" />
+    <Property Name="BASIC" Type="float" />
+    <Property Name="INCR" Type="float" />
+    <Property Name="DINC" Type="smalldatetime" />
+    <Property Name="LDINC" Type="smalldatetime" />
+    <Property Name="COOR" Type="nvarchar" MaxLength="4" />
+    <Property Name="REM" Type="nvarchar" MaxLength="20" />
+    <Property Name="SCSTOS" Type="nvarchar" MaxLength="2" />
+    <Property Name="FILENO" Type="nvarchar" MaxLength="6" Nullable="false" />
+    <Property Name="OLD_FILENO" Type="nvarchar" MaxLength="6" />
+    <Property Name="DESIGN" Type="nvarchar" MaxLength="35" />
+    <Property Name="COO" Type="nvarchar" MaxLength="50" />
+    <Property Name="PFLAG" Type="nvarchar" MaxLength="1" />
+    <Property Name="HRA" Type="float" />
+    <Property Name="DT_INP" Type="smalldatetime" />
+    <Property Name="DT_CHG" Type="smalldatetime" />
+    <Property Name="PCODE" Type="nvarchar" MaxLength="30" />
+    <Property Name="DOB" Type="smalldatetime" />
+    <Property Name="DEPARTMENT" Type="nvarchar" MaxLength="40" />
+    <Property Name="FATHER" Type="nvarchar" MaxLength="30" />
+    <Property Name="ADDRESS1" Type="nvarchar" MaxLength="30" />
+    <Property Name="ADDRESS2" Type="nvarchar" MaxLength="30" />
+    <Property Name="ADDRESS3" Type="nvarchar" MaxLength="30" />
+    <Property Name="ADDRESS4" Type="nvarchar" MaxLength="30" />
+    <Property Name="CITY" Type="nvarchar" MaxLength="20" />
+    <Property Name="MONTH" Type="float" />
+    <Property Name="RATE" Type="float" />
+    <Property Name="SEX" Type="nvarchar" MaxLength="1" />
+    <Property Name="BLDGRP" Type="nvarchar" MaxLength="3" />
+    <Property Name="RH" Type="nvarchar" MaxLength="3" />
+    <Property Name="PHONE" Type="nvarchar" MaxLength="12" />
+    <Property Name="R_ADDR1" Type="nvarchar" MaxLength="30" />
+    <Property Name="R_ADDR2" Type="nvarchar" MaxLength="30" />
+    <Property Name="R_CITY" Type="nvarchar" MaxLength="20" />
+    <Property Name="R_PIN" Type="nvarchar" MaxLength="7" />
+    <Property Name="R_PHONE" Type="nvarchar" MaxLength="12" />
+    <Property Name="R_ADDR3" Type="nvarchar" MaxLength="30" />
+    <Property Name="R_ADDR4" Type="nvarchar" MaxLength="30" />
+    <Property Name="COURSE" Type="nvarchar" MaxLength="5" />
+    <Property Name="SEMESTER" Type="nvarchar" MaxLength="20" />
+    <Property Name="YR" Type="char" MaxLength="4" />
+    <Property Name="PROVISIONAL" Type="nvarchar" MaxLength="50" />
+    <Property Name="MEDICAL" Type="nvarchar" MaxLength="10" />
+    <Property Name="extn_date" Type="datetime" />
+    <Property Name="paybill_id" Type="nvarchar" MaxLength="4" />
+    <Property Name="paybill_no" Type="nvarchar" MaxLength="5" />
+    <Property Name="email_id" Type="nvarchar" MaxLength="50" />
+    <Property Name="Pensioner" Type="varchar" MaxLength="3" />
+    <Property Name="Qualification" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="RecruitModelStoreContainer">
+    <EntitySet Name="NEWADH" EntityType="Self.NEWADH" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NEWREG" EntityType="Self.NEWREG" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

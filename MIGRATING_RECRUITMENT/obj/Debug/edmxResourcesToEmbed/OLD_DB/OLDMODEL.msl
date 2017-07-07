@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="RecruitModelStoreContainer" CdmEntityContainer="RecruitEntities">
+    <EntitySetMapping Name="NEWADH">
+      <EntityTypeMapping TypeName="RecruitModel.NEWADH">
+        <MappingFragment StoreEntitySet="NEWADH">
+          <ScalarProperty Name="EMPCODE" ColumnName="EMPCODE" />
+          <ScalarProperty Name="STAT" ColumnName="STAT" />
+          <ScalarProperty Name="TITLE" ColumnName="TITLE" />
+          <ScalarProperty Name="PROJECTNO" ColumnName="PROJECTNO" />
+          <ScalarProperty Name="PTYPE" ColumnName="PTYPE" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="DEPT" ColumnName="DEPT" />
+          <ScalarProperty Name="SPON" ColumnName="SPON" />
+          <ScalarProperty Name="DESIG" ColumnName="DESIG" />
+          <ScalarProperty Name="DTAP" ColumnName="DTAP" />
+          <ScalarProperty Name="EXTN" ColumnName="EXTN" />
+          <ScalarProperty Name="DRLF" ColumnName="DRLF" />
+          <ScalarProperty Name="BASIC" ColumnName="BASIC" />
+          <ScalarProperty Name="INCR" ColumnName="INCR" />
+          <ScalarProperty Name="DINC" ColumnName="DINC" />
+          <ScalarProperty Name="LDINC" ColumnName="LDINC" />
+          <ScalarProperty Name="COOR" ColumnName="COOR" />
+          <ScalarProperty Name="REM" ColumnName="REM" />
+          <ScalarProperty Name="SCSTOS" ColumnName="SCSTOS" />
+          <ScalarProperty Name="FILENO" ColumnName="FILENO" />
+          <ScalarProperty Name="OLD_FILENO" ColumnName="OLD_FILENO" />
+          <ScalarProperty Name="DESIGN" ColumnName="DESIGN" />
+          <ScalarProperty Name="COO" ColumnName="COO" />
+          <ScalarProperty Name="PFLAG" ColumnName="PFLAG" />
+          <ScalarProperty Name="HRA" ColumnName="HRA" />
+          <ScalarProperty Name="DT_INP" ColumnName="DT_INP" />
+          <ScalarProperty Name="DT_CHG" ColumnName="DT_CHG" />
+          <ScalarProperty Name="PCODE" ColumnName="PCODE" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="DEPARTMENT" ColumnName="DEPARTMENT" />
+          <ScalarProperty Name="FATHER" ColumnName="FATHER" />
+          <ScalarProperty Name="ADDRESS1" ColumnName="ADDRESS1" />
+          <ScalarProperty Name="ADDRESS2" ColumnName="ADDRESS2" />
+          <ScalarProperty Name="ADDRESS3" ColumnName="ADDRESS3" />
+          <ScalarProperty Name="ADDRESS4" ColumnName="ADDRESS4" />
+          <ScalarProperty Name="CITY" ColumnName="CITY" />
+          <ScalarProperty Name="MONTH" ColumnName="MONTH" />
+          <ScalarProperty Name="RATE" ColumnName="RATE" />
+          <ScalarProperty Name="SEX" ColumnName="SEX" />
+          <ScalarProperty Name="BLDGRP" ColumnName="BLDGRP" />
+          <ScalarProperty Name="RH" ColumnName="RH" />
+          <ScalarProperty Name="PHONE" ColumnName="PHONE" />
+          <ScalarProperty Name="R_ADDR1" ColumnName="R_ADDR1" />
+          <ScalarProperty Name="R_ADDR2" ColumnName="R_ADDR2" />
+          <ScalarProperty Name="R_CITY" ColumnName="R_CITY" />
+          <ScalarProperty Name="R_PIN" ColumnName="R_PIN" />
+          <ScalarProperty Name="R_PHONE" ColumnName="R_PHONE" />
+          <ScalarProperty Name="R_ADDR3" ColumnName="R_ADDR3" />
+          <ScalarProperty Name="R_ADDR4" ColumnName="R_ADDR4" />
+          <ScalarProperty Name="COURSE" ColumnName="COURSE" />
+          <ScalarProperty Name="SEMESTER" ColumnName="SEMESTER" />
+          <ScalarProperty Name="YR" ColumnName="YR" />
+          <ScalarProperty Name="PROVISIONAL" ColumnName="PROVISIONAL" />
+          <ScalarProperty Name="MEDICAL" ColumnName="MEDICAL" />
+          <ScalarProperty Name="extn_date" ColumnName="extn_date" />
+          <ScalarProperty Name="paybill_id" ColumnName="paybill_id" />
+          <ScalarProperty Name="paybill_no" ColumnName="paybill_no" />
+          <ScalarProperty Name="email_id" ColumnName="email_id" />
+          <ScalarProperty Name="Pensioner" ColumnName="Pensioner" />
+          <ScalarProperty Name="Qualification" ColumnName="Qualification" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NEWREG">
+      <EntityTypeMapping TypeName="RecruitModel.NEWREG">
+        <MappingFragment StoreEntitySet="NEWREG">
+          <ScalarProperty Name="Qualification" ColumnName="Qualification" />
+          <ScalarProperty Name="Pensioner" ColumnName="Pensioner" />
+          <ScalarProperty Name="email_id" ColumnName="email_id" />
+          <ScalarProperty Name="paybill_no" ColumnName="paybill_no" />
+          <ScalarProperty Name="paybill_id" ColumnName="paybill_id" />
+          <ScalarProperty Name="extn_date" ColumnName="extn_date" />
+          <ScalarProperty Name="MEDICAL" ColumnName="MEDICAL" />
+          <ScalarProperty Name="PROVISIONAL" ColumnName="PROVISIONAL" />
+          <ScalarProperty Name="YR" ColumnName="YR" />
+          <ScalarProperty Name="SEMESTER" ColumnName="SEMESTER" />
+          <ScalarProperty Name="COURSE" ColumnName="COURSE" />
+          <ScalarProperty Name="R_ADDR4" ColumnName="R_ADDR4" />
+          <ScalarProperty Name="R_ADDR3" ColumnName="R_ADDR3" />
+          <ScalarProperty Name="R_PHONE" ColumnName="R_PHONE" />
+          <ScalarProperty Name="R_PIN" ColumnName="R_PIN" />
+          <ScalarProperty Name="R_CITY" ColumnName="R_CITY" />
+          <ScalarProperty Name="R_ADDR2" ColumnName="R_ADDR2" />
+          <ScalarProperty Name="R_ADDR1" ColumnName="R_ADDR1" />
+          <ScalarProperty Name="PHONE" ColumnName="PHONE" />
+          <ScalarProperty Name="RH" ColumnName="RH" />
+          <ScalarProperty Name="BLDGRP" ColumnName="BLDGRP" />
+          <ScalarProperty Name="SEX" ColumnName="SEX" />
+          <ScalarProperty Name="RATE" ColumnName="RATE" />
+          <ScalarProperty Name="MONTH" ColumnName="MONTH" />
+          <ScalarProperty Name="CITY" ColumnName="CITY" />
+          <ScalarProperty Name="ADDRESS4" ColumnName="ADDRESS4" />
+          <ScalarProperty Name="ADDRESS3" ColumnName="ADDRESS3" />
+          <ScalarProperty Name="ADDRESS2" ColumnName="ADDRESS2" />
+          <ScalarProperty Name="ADDRESS1" ColumnName="ADDRESS1" />
+          <ScalarProperty Name="FATHER" ColumnName="FATHER" />
+          <ScalarProperty Name="DEPARTMENT" ColumnName="DEPARTMENT" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="PCODE" ColumnName="PCODE" />
+          <ScalarProperty Name="DT_CHG" ColumnName="DT_CHG" />
+          <ScalarProperty Name="DT_INP" ColumnName="DT_INP" />
+          <ScalarProperty Name="HRA" ColumnName="HRA" />
+          <ScalarProperty Name="PFLAG" ColumnName="PFLAG" />
+          <ScalarProperty Name="COO" ColumnName="COO" />
+          <ScalarProperty Name="DESIGN" ColumnName="DESIGN" />
+          <ScalarProperty Name="OLD_FILENO" ColumnName="OLD_FILENO" />
+          <ScalarProperty Name="FILENO" ColumnName="FILENO" />
+          <ScalarProperty Name="SCSTOS" ColumnName="SCSTOS" />
+          <ScalarProperty Name="REM" ColumnName="REM" />
+          <ScalarProperty Name="COOR" ColumnName="COOR" />
+          <ScalarProperty Name="LDINC" ColumnName="LDINC" />
+          <ScalarProperty Name="DINC" ColumnName="DINC" />
+          <ScalarProperty Name="INCR" ColumnName="INCR" />
+          <ScalarProperty Name="BASIC" ColumnName="BASIC" />
+          <ScalarProperty Name="DRLF" ColumnName="DRLF" />
+          <ScalarProperty Name="EXTN" ColumnName="EXTN" />
+          <ScalarProperty Name="DTAP" ColumnName="DTAP" />
+          <ScalarProperty Name="DESIG" ColumnName="DESIG" />
+          <ScalarProperty Name="SPON" ColumnName="SPON" />
+          <ScalarProperty Name="DEPT" ColumnName="DEPT" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="PTYPE" ColumnName="PTYPE" />
+          <ScalarProperty Name="PROJECTNO" ColumnName="PROJECTNO" />
+          <ScalarProperty Name="TITLE" ColumnName="TITLE" />
+          <ScalarProperty Name="STAT" ColumnName="STAT" />
+          <ScalarProperty Name="EMPCODE" ColumnName="EMPCODE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

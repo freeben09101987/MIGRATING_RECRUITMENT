@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="RECRUITMENTModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ADDITIONAL_INFO">
+    <Key>
+      <PropertyRef Name="FILENO" />
+    </Key>
+    <Property Name="FILENO" Type="nvarchar" MaxLength="6" Nullable="false" />
+    <Property Name="DINC" Type="smalldatetime" />
+    <Property Name="LDINC" Type="smalldatetime" />
+    <Property Name="REM" Type="nvarchar" MaxLength="20" />
+    <Property Name="PFLAG" Type="nvarchar" MaxLength="1" />
+    <Property Name="PCODE" Type="nvarchar" MaxLength="30" />
+    <Property Name="MONTH" Type="float" />
+    <Property Name="RATE" Type="float" />
+    <Property Name="PROVISIONAL" Type="nvarchar" MaxLength="50" />
+    <Property Name="MEDICAL" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="EMP_DETAIL">
+    <Key>
+      <PropertyRef Name="FILENO" />
+    </Key>
+    <Property Name="FILENO" Type="nvarchar" MaxLength="6" Nullable="false" />
+    <Property Name="STAT" Type="nvarchar" MaxLength="1" />
+    <Property Name="DEPT" Type="nvarchar" MaxLength="7" />
+    <Property Name="DESIG" Type="nvarchar" MaxLength="3" />
+    <Property Name="DTAP" Type="smalldatetime" />
+    <Property Name="EXTN" Type="smalldatetime" />
+    <Property Name="DRLF" Type="smalldatetime" />
+    <Property Name="OLD_FILENO" Type="nvarchar" MaxLength="6" />
+    <Property Name="DESIGN" Type="nvarchar" MaxLength="35" />
+    <Property Name="DEPARTMENT" Type="nvarchar" MaxLength="50" />
+    <Property Name="EXTN_DATE" Type="datetime" />
+  </EntityType>
+  <EntityType Name="META">
+    <Key>
+      <PropertyRef Name="FILENO" />
+    </Key>
+    <Property Name="FILENO" Type="nvarchar" MaxLength="6" Nullable="false" />
+    <Property Name="DT_INP" Type="smalldatetime" />
+    <Property Name="DT_CHG" Type="smalldatetime" />
+  </EntityType>
+  <EntityType Name="MS_PHD">
+    <Key>
+      <PropertyRef Name="FILENO" />
+    </Key>
+    <Property Name="FILENO" Type="nvarchar" MaxLength="6" Nullable="false" />
+    <Property Name="COURSE" Type="nvarchar" MaxLength="10" />
+    <Property Name="SEMESTER" Type="nvarchar" MaxLength="20" />
+    <Property Name="YR" Type="char" MaxLength="4" />
+  </EntityType>
+  <EntityType Name="PAY_DETAIL">
+    <Key>
+      <PropertyRef Name="FILENO" />
+    </Key>
+    <Property Name="FILENO" Type="nvarchar" MaxLength="6" Nullable="false" />
+    <Property Name="BAISC" Type="float" />
+    <Property Name="INCR" Type="float" />
+    <Property Name="HRA" Type="float" />
+    <Property Name="PAYBILL_ID" Type="nvarchar" MaxLength="4" />
+    <Property Name="PAYBILL_NO" Type="nvarchar" MaxLength="5" />
+  </EntityType>
+  <EntityType Name="PERSONAL_INFO">
+    <Key>
+      <PropertyRef Name="FILENO" />
+    </Key>
+    <Property Name="FILENO" Type="nvarchar" MaxLength="6" Nullable="false" />
+    <Property Name="NAME" Type="nvarchar" MaxLength="150" />
+    <Property Name="SCSTOS" Type="nvarchar" MaxLength="2" />
+    <Property Name="DOB" Type="smalldatetime" />
+    <Property Name="FATHER" Type="nvarchar" MaxLength="50" />
+    <Property Name="ADDRESS1" Type="nvarchar" MaxLength="30" />
+    <Property Name="ADDRESS2" Type="nvarchar" MaxLength="30" />
+    <Property Name="ADDRESS3" Type="nvarchar" MaxLength="30" />
+    <Property Name="ADDRESS4" Type="nvarchar" MaxLength="30" />
+    <Property Name="CITY" Type="nvarchar" MaxLength="20" />
+    <Property Name="SEX" Type="nvarchar" MaxLength="1" />
+    <Property Name="BLDGRP" Type="nvarchar" MaxLength="3" />
+    <Property Name="RH" Type="nvarchar" MaxLength="3" />
+    <Property Name="PHONE" Type="nvarchar" MaxLength="12" />
+    <Property Name="R_ADDR1" Type="nvarchar" MaxLength="30" />
+    <Property Name="R_ADDR2" Type="nvarchar" MaxLength="30" />
+    <Property Name="R_CITY" Type="nvarchar" MaxLength="20" />
+    <Property Name="R_PIN" Type="nvarchar" MaxLength="7" />
+    <Property Name="R_PHONE" Type="nvarchar" MaxLength="12" />
+    <Property Name="R_ADDR3" Type="nvarchar" MaxLength="30" />
+    <Property Name="R_ADDR4" Type="nvarchar" MaxLength="30" />
+    <Property Name="EMAIL_ID" Type="nvarchar" MaxLength="50" />
+    <Property Name="PENSIONER" Type="varchar" MaxLength="3" />
+    <Property Name="QUALIFICATION" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="PROJECT_INFO">
+    <Key>
+      <PropertyRef Name="FILENO" />
+    </Key>
+    <Property Name="FILENO" Type="nvarchar" MaxLength="6" Nullable="false" />
+    <Property Name="TITLE" Type="nvarchar" MaxLength="120" />
+    <Property Name="PROJECTNO" Type="nvarchar" MaxLength="25" />
+    <Property Name="PTYPE" Type="nvarchar" MaxLength="3" />
+    <Property Name="SPON" Type="nvarchar" MaxLength="4" />
+    <Property Name="COOR" Type="nvarchar" MaxLength="4" />
+    <Property Name="COO" Type="nvarchar" MaxLength="60" />
+  </EntityType>
+  <EntityType Name="RECRUIT_TYPE">
+    <Key>
+      <PropertyRef Name="FILENO" />
+    </Key>
+    <Property Name="FILENO" Type="nvarchar" MaxLength="6" Nullable="false" />
+    <Property Name="TYPE" Type="int" />
+  </EntityType>
+  <EntityContainer Name="RECRUITMENTModelStoreContainer">
+    <EntitySet Name="ADDITIONAL_INFO" EntityType="Self.ADDITIONAL_INFO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EMP_DETAIL" EntityType="Self.EMP_DETAIL" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="META" EntityType="Self.META" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MS_PHD" EntityType="Self.MS_PHD" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PAY_DETAIL" EntityType="Self.PAY_DETAIL" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PERSONAL_INFO" EntityType="Self.PERSONAL_INFO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PROJECT_INFO" EntityType="Self.PROJECT_INFO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RECRUIT_TYPE" EntityType="Self.RECRUIT_TYPE" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

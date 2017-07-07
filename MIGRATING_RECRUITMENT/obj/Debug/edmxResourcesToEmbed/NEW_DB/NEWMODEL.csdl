@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="RECRUITMENTModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ADDITIONAL_INFO">
+    <Key>
+      <PropertyRef Name="FILENO" />
+    </Key>
+    <Property Name="FILENO" Type="String" MaxLength="6" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DINC" Type="DateTime" Precision="0" />
+    <Property Name="LDINC" Type="DateTime" Precision="0" />
+    <Property Name="REM" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="PFLAG" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="PCODE" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="MONTH" Type="Double" />
+    <Property Name="RATE" Type="Double" />
+    <Property Name="PROVISIONAL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MEDICAL" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="META">
+    <Key>
+      <PropertyRef Name="FILENO" />
+    </Key>
+    <Property Name="FILENO" Type="String" MaxLength="6" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DT_INP" Type="DateTime" Precision="0" />
+    <Property Name="DT_CHG" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="MS_PHD">
+    <Key>
+      <PropertyRef Name="FILENO" />
+    </Key>
+    <Property Name="FILENO" Type="String" MaxLength="6" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="COURSE" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="SEMESTER" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="YR" Type="String" MaxLength="4" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="PROJECT_INFO">
+    <Key>
+      <PropertyRef Name="FILENO" />
+    </Key>
+    <Property Name="FILENO" Type="String" MaxLength="6" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TITLE" Type="String" MaxLength="120" FixedLength="false" Unicode="true" />
+    <Property Name="PROJECTNO" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Name="PTYPE" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="SPON" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="COOR" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="COO" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="RECRUITMENTEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ADDITIONAL_INFO" EntityType="Self.ADDITIONAL_INFO" />
+    <EntitySet Name="META" EntityType="Self.META" />
+    <EntitySet Name="MS_PHD" EntityType="Self.MS_PHD" />
+    <EntitySet Name="PROJECT_INFO" EntityType="Self.PROJECT_INFO" />
+    <EntitySet Name="PAY_DETAIL" EntityType="RECRUITMENTModel.PAY_DETAIL" />
+    <EntitySet Name="PERSONAL_INFO" EntityType="RECRUITMENTModel.PERSONAL_INFO" />
+    <EntitySet Name="EMP_DETAIL" EntityType="RECRUITMENTModel.EMP_DETAIL" />
+    <EntitySet Name="RECRUIT_TYPE" EntityType="RECRUITMENTModel.RECRUIT_TYPE" />
+  </EntityContainer>
+  <EntityType Name="PAY_DETAIL">
+    <Key>
+      <PropertyRef Name="FILENO" />
+    </Key>
+    <Property Name="FILENO" Type="String" Nullable="false" MaxLength="6" FixedLength="false" Unicode="true" />
+    <Property Name="BAISC" Type="Double" />
+    <Property Name="INCR" Type="Double" />
+    <Property Name="HRA" Type="Double" />
+    <Property Name="PAYBILL_ID" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="PAYBILL_NO" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="PERSONAL_INFO">
+    <Key>
+      <PropertyRef Name="FILENO" />
+    </Key>
+    <Property Name="FILENO" Type="String" Nullable="false" MaxLength="6" FixedLength="false" Unicode="true" />
+    <Property Name="NAME" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="SCSTOS" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="DOB" Type="DateTime" Precision="0" />
+    <Property Name="FATHER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ADDRESS1" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="ADDRESS2" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="ADDRESS3" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="ADDRESS4" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="CITY" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="SEX" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="BLDGRP" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="RH" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="PHONE" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="R_ADDR1" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="R_ADDR2" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="R_CITY" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="R_PIN" Type="String" MaxLength="7" FixedLength="false" Unicode="true" />
+    <Property Name="R_PHONE" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="R_ADDR3" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="R_ADDR4" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="EMAIL_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PENSIONER" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="QUALIFICATION" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="EMP_DETAIL">
+    <Key>
+      <PropertyRef Name="FILENO" />
+    </Key>
+    <Property Name="FILENO" Type="String" Nullable="false" MaxLength="6" FixedLength="false" Unicode="true" />
+    <Property Name="STAT" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="DEPT" Type="String" MaxLength="7" FixedLength="false" Unicode="true" />
+    <Property Name="DESIG" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="DTAP" Type="DateTime" Precision="0" />
+    <Property Name="EXTN" Type="DateTime" Precision="0" />
+    <Property Name="DRLF" Type="DateTime" Precision="0" />
+    <Property Name="OLD_FILENO" Type="String" MaxLength="6" FixedLength="false" Unicode="true" />
+    <Property Name="DESIGN" Type="String" MaxLength="35" FixedLength="false" Unicode="true" />
+    <Property Name="DEPARTMENT" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EXTN_DATE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="RECRUIT_TYPE">
+    <Key>
+      <PropertyRef Name="FILENO" />
+    </Key>
+    <Property Name="FILENO" Type="String" Nullable="false" MaxLength="6" FixedLength="false" Unicode="true" />
+    <Property Name="TYPE" Type="Int32" />
+  </EntityType>
+</Schema>

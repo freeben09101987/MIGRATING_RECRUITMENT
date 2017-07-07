@@ -1,0 +1,10 @@
+c:\users\7\documents\visual studio 2015\Projects\MIGRATING_RECRUITMENT\MIGRATING_RECRUITMENT\bin\Debug\MIGRATING_RECRUITMENT.exe.config
+c:\users\7\documents\visual studio 2015\Projects\MIGRATING_RECRUITMENT\MIGRATING_RECRUITMENT\bin\Debug\MIGRATING_RECRUITMENT.exe
+c:\users\7\documents\visual studio 2015\Projects\MIGRATING_RECRUITMENT\MIGRATING_RECRUITMENT\bin\Debug\MIGRATING_RECRUITMENT.pdb
+c:\users\7\documents\visual studio 2015\Projects\MIGRATING_RECRUITMENT\MIGRATING_RECRUITMENT\bin\Debug\EntityFramework.dll
+c:\users\7\documents\visual studio 2015\Projects\MIGRATING_RECRUITMENT\MIGRATING_RECRUITMENT\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\7\documents\visual studio 2015\Projects\MIGRATING_RECRUITMENT\MIGRATING_RECRUITMENT\bin\Debug\EntityFramework.xml
+c:\users\7\documents\visual studio 2015\Projects\MIGRATING_RECRUITMENT\MIGRATING_RECRUITMENT\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\7\documents\visual studio 2015\Projects\MIGRATING_RECRUITMENT\MIGRATING_RECRUITMENT\obj\Debug\MIGRATING_RECRUITMENT.csprojResolveAssemblyReference.cache
+c:\users\7\documents\visual studio 2015\Projects\MIGRATING_RECRUITMENT\MIGRATING_RECRUITMENT\obj\Debug\MIGRATING_RECRUITMENT.exe
+c:\users\7\documents\visual studio 2015\Projects\MIGRATING_RECRUITMENT\MIGRATING_RECRUITMENT\obj\Debug\MIGRATING_RECRUITMENT.pdb
